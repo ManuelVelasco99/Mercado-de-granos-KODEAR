@@ -1,0 +1,28 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p style="font-size: large;">Menu</p>
+    <div (click)="irPosiciones()" (click)="drawer.toggle()">
+      <button mat-button>Listado de posiciones</button>
+    </div>
+    <div (click)="irUsuarios()" (click)="drawer.toggle()">
+      <button mat-button>Listado de usuarios</button>
+    </div>
+    <div (click)="irInicio()" (click)="drawer.toggle()">
+      <button mat-button>Inicio</button>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <p>
+      <mat-toolbar color="primary">
+        <mat-icon (click)="drawer.toggle()" style="cursor: pointer;">menu</mat-icon>
+        <span style="margin-left: 10px;">Mercado de Granos</span>
+      </mat-toolbar>
+    </p>
+    
+    <router-outlet></router-outlet>
+    
+  </div>
+
+</mat-drawer-container>
+
