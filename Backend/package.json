@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "set NODE_ENV=development&& nodemon node dist",
+    "proyect": "set NODE_ENV=development&& node dist",
     "insertUser": "set NODE_ENV=development2&& node dist"
   },
   "author": "Manuel Velasco",
